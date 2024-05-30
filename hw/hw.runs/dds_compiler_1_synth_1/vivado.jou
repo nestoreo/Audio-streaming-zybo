@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May 22 18:18:15 2024
+# Process ID: 2156
+# Current directory: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/dds_compiler_1_synth_1
+# Command line: vivado.exe -log dds_compiler_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_compiler_1.tcl
+# Log file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/dds_compiler_1_synth_1/dds_compiler_1.vds
+# Journal file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/dds_compiler_1_synth_1\vivado.jou
+# Running On: m210-09, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 34200 MB
+#-----------------------------------------------------------
+source dds_compiler_1.tcl -notrace

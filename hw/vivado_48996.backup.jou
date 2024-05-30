@@ -1,0 +1,280 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun May 19 14:50:04 2024
+# Process ID: 48996
+# Current directory: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent53116 P:\24spring\engs128\workspace\Nestor_Jason\FinalProject-128\Zybo-Z7-10-DMA-hw.xpr\hw\hw.xpr
+# Log file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/vivado.log
+# Journal file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw\vivado.jou
+# Running On: m210-09, OS: Windows, CPU Frequency: 2904 MHz, CPU Physical cores: 8, Host memory: 34200 MB
+#-----------------------------------------------------------
+start_gui
+open_project P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.xpr
+update_compile_order -fileset sources_1
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0
+endgroup
+set_property location {3 877 742} [get_bd_cells fir_compiler_0]
+set_property location {2 611 741} [get_bd_cells fir_compiler_0]
+delete_bd_objs [get_bd_intf_nets d_axi_i2s_audio_0_AXI_S2MM]
+connect_bd_intf_net [get_bd_intf_pins fir_compiler_0/M_AXIS_DATA] [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM]
+connect_bd_intf_net [get_bd_intf_pins d_axi_i2s_audio_0/AXI_S2MM] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
+connect_bd_net [get_bd_pins fir_compiler_0/aclk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {3 990 825} [get_bd_cells fir_compiler_0]
+delete_bd_objs [get_bd_intf_nets fir_compiler_0_M_AXIS_DATA]
+delete_bd_objs [get_bd_intf_nets d_axi_i2s_audio_0_AXI_S2MM]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/S_AXIS_S2MM] [get_bd_intf_pins d_axi_i2s_audio_0/AXI_S2MM]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
+connect_bd_intf_net [get_bd_intf_pins fir_compiler_0/M_AXIS_DATA] [get_bd_intf_pins d_axi_i2s_audio_0/AXI_MM2S]
+regenerate_bd_layout
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.DATA_Has_TLAST {Packet_Framing} CONFIG.M_DATA_Has_TREADY {true} CONFIG.S_DATA_Has_TUSER {User_Field} CONFIG.M_DATA_Has_TUSER {User_Field}] [get_bd_cells fir_compiler_0]
+endgroup
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.Data_Width.VALUE_SRC USER] [get_bd_cells fir_compiler_0]
+set_property -dict [list CONFIG.Data_Width {32} CONFIG.S_DATA_Has_TUSER {Not_Required} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Rounding_Mode {Full_Precision} CONFIG.Output_Width {40} CONFIG.M_DATA_Has_TUSER {Not_Required}] [get_bd_cells fir_compiler_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {32}] [get_bd_cells fir_compiler_0]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.DATA_TUSER_Width.VALUE_SRC USER] [get_bd_cells fir_compiler_0]
+set_property -dict [list CONFIG.S_DATA_Has_TUSER {Not_Required} CONFIG.DATA_TUSER_Width {4} CONFIG.M_DATA_Has_TUSER {Not_Required}] [get_bd_cells fir_compiler_0]
+endgroup
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.CoefficientSource {Vector} CONFIG.Quantization {Maximize_Dynamic_Range} CONFIG.Passband_Min {0.0625} CONFIG.Passband_Max {1} CONFIG.Stopband_Min {0} CONFIG.Stopband_Max {0.062} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Maximize_Dynamic_Range} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {8} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {32} CONFIG.Output_Width {32}] [get_bd_cells fir_compiler_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Channel_Sequence {Basic} CONFIG.RateSpecification {Frequency_Specification} CONFIG.Sample_Frequency {0.096} CONFIG.Clock_Frequency {100} CONFIG.Quantization {Integer_Coefficients} CONFIG.Number_Channels {1} CONFIG.Select_Pattern {All} CONFIG.SamplePeriod {1} CONFIG.Clock_Frequency {100} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Output_Width {32} CONFIG.Filter_Architecture {Systolic_Multiply_Accumulate} CONFIG.ColumnConfig {1} CONFIG.DATA_Has_TLAST {Packet_Framing} CONFIG.S_DATA_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required}] [get_bd_cells fir_compiler_0]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+set_property location {4 1316 687} [get_bd_cells fir_compiler_0]
+startgroup
+set_property -dict [list CONFIG.CoefficientSource {Vector} CONFIG.CoefficientVector {1509,  40,  -44,  -172,  -326,  -481,  -613,  -697,  -719,  -672,  -562,  -404,  -221,  -37,  121,  236,  299,  311,  288,  248,  211,  199,  224,  285,  372,  462,  528,  542,  480,  333,  106,  -181,  -491,  -780,  -1002,  -1120,  -1110,  -967,  -710,  -376,  -15,  316,  569,  707,  716,  604,  403,  161,  -66,  -229,  -287,  -226,  -53,  199,  481,  734,  904,  948,  847,  609,  267,  -128,  -514,  -832,  -1034,  -1096,  -1021,  -835,  -585,  -326,  -110,  22,  55,  -5,  -125,  -256,  -345,  -346,  -228,  10,  344,  724,  1085,  1359,  1489,  1443,  1218,  845,  383,  -93,  -505,  -788,  -905,  -854,  -667,  -406,  -149,  25,  56,  -83,  -381,  -786,  -1215,  -1569,  -1755,  -1701,  -1380,  -811,  -63,  759,  1528,  2125,  2456,  2473,  2188,  1663,  1008,  354,  -175,  -481,  -519,  -306,  81,  520,  870,  996,  806,  270,  -569,  -1595,  -2640,  -3514,  -4040,  -4091,  -3618,  -2663,  -1357,  101,  1480,  2564,  3190,  3285,  2885,  2130,  1238,  465,  50,  164,  860,  2055,  3532,  4965,  5978,  6211,  5393,  3409,  338,  -3533,  -7741,  -11700,  -14787,  -16445,  -16273,  -14100,  -10036,  -4465,  1992,  8560,  14416,  18807,  21157,  21157,  18807,  14416,  8560,  1992,  -4465,  -10036,  -14100,  -16273,  -16445,  -14787,  -11700,  -7741,  -3533,  338,  3409,  5393,  6211,  5978,  4965,  3532,  2055,  860,  164,  50,  465,  1238,  2130,  2885,  3285,  3190,  2564,  1480,  101,  -1357,  -2663,  -3618,  -4091,  -4040,  -3514,  -2640,  -1595,  -569,  270,  806,  996,  870,  520,  81,  -306,  -519,  -481,  -175,  354,  1008,  1663,  2188,  2473,  2456,  2125,  1528,  759,  -63,  -811,  -1380,  -1701,  -1755,  -1569,  -1215,  -786,  -381,  -83,  56,  25,  -149,  -406,  -667,  -854,  -905,  -788,  -505,  -93,  383,  845,  1218,  1443,  1489,  1359,  1085,  724,  344,  10,  -228,  -346,  -345,  -256,  -125,  -5,  55,  22,  -110,  -326,  -585,  -835,  -1021,  -1096,  -1034,  -832,  -514,  -128,  267,  609,  847,  948,  904,  734,  481,  199,  -53,  -226,  -287,  -229,  -66,  161,  403,  604,  716,  707,  569,  316,  -15,  -376,  -710,  -967,  -1110,  -1120,  -1002,  -780,  -491,  -181,  106,  333,  480,  542,  528,  462,  372,  285,  224,  199,  211,  248,  288,  311,  299,  236,  121,  -37,  -221,  -404,  -562,  -672,  -719,  -697,  -613,  -481,  -326,  -172,  -44,  40,  1509} CONFIG.Coefficient_File {p:\24spring\engs128\workspace\Nestor_Jason\FinalProject-128\Zybo-Z7-10-DMA-hw.xpr\hw\hw.srcs\sources_1\bd\system\ip\system_fir_compiler_0_0.coe} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Sets {1} CONFIG.Coefficient_Sign {Signed} CONFIG.Quantization {Integer_Coefficients} CONFIG.Coefficient_Width {16} CONFIG.Coefficient_Fractional_Bits {0} CONFIG.Coefficient_Structure {Inferred} CONFIG.Data_Width {32} CONFIG.Output_Width {32}] [get_bd_cells fir_compiler_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.Output_Rounding_Mode {Truncate_LSBs} CONFIG.Output_Width {51}] [get_bd_cells fir_compiler_0]
+endgroup
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.Output_Width {32}] [get_bd_cells fir_compiler_0]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/system_wrapper.xsa
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property -dict [list CONFIG.C_PROBE1_WIDTH {32} CONFIG.C_PROBE0_WIDTH {32} CONFIG.C_DATA_DEPTH {131072} CONFIG.C_NUM_OF_PROBES {2} CONFIG.C_TRIGOUT_EN {false} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_ADV_TRIGGER {true} CONFIG.C_PROBE1_MU_CNT {2} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2} CONFIG.C_MON_TYPE {NATIVE} CONFIG.C_PROBE_WIDTH_PROPAGATION {MANUAL}] [get_bd_cells system_ila_0]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_0/clk]
+set_property location {2 538 -2} [get_bd_cells system_ila_0]
+set_property location {4 1395 961} [get_bd_cells system_ila_0]
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins fir_compiler_0/s_axis_data_tdata]
+connect_bd_net [get_bd_pins system_ila_0/probe1] [get_bd_pins fir_compiler_0/m_axis_data_tdata]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {8192} CONFIG.C_ADV_TRIGGER {true}] [get_bd_cells system_ila_0]
+endgroup
+validate_bd_design
+delete_bd_objs [get_bd_nets Net]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tdata] [get_bd_pins fir_compiler_0/s_axis_data_tdata]
+delete_bd_objs [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S]
+connect_bd_net [get_bd_pins fir_compiler_0/s_axis_data_tlast] [get_bd_pins axi_dma_0/m_axis_mm2s_tlast]
+connect_bd_net [get_bd_pins axi_dma_0/m_axis_mm2s_tready] [get_bd_pins fir_compiler_0/s_axis_data_tready]
+connect_bd_net [get_bd_pins fir_compiler_0/s_axis_data_tvalid] [get_bd_pins axi_dma_0/m_axis_mm2s_tvalid]
+connect_bd_net [get_bd_pins system_ila_0/probe0] [get_bd_pins axi_dma_0/m_axis_mm2s_tdata]
+regenerate_bd_layout
+validate_bd_design
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/system_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE gt32'h0000_0000 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE eq32'h0000_0000 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+write_hw_platform -fixed -include_bit -force -file P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/system_wrapper.xsa
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE eq32's0 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq32's500 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+set_property TRIGGER_COMPARE_VALUE gt32's500 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq32'b0000_0000_0000_0000_0000_0001_1111_0100 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq32's500 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq32's0 [get_hw_probes system_i/system_ila_0/inst/probe0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+delete_bd_objs [get_bd_nets fir_compiler_0_m_axis_data_tdata]
+delete_bd_objs [get_bd_nets axi_dma_0_m_axis_mm2s_tdata]
+delete_bd_objs [get_bd_cells system_ila_0]
+delete_bd_objs [get_bd_nets axi_dma_0_m_axis_mm2s_tlast]
+delete_bd_objs [get_bd_nets axi_dma_0_m_axis_mm2s_tvalid]
+delete_bd_objs [get_bd_nets fir_compiler_0_s_axis_data_tready]
+connect_bd_intf_net [get_bd_intf_pins axi_dma_0/M_AXIS_MM2S] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property location {1 120 -20} [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_NUM_MONITOR_SLOTS {2} CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0}] [get_bd_cells system_ila_0]
+set_property -dict [list CONFIG.C_SLOT {1} CONFIG.C_EN_STRG_QUAL {1} CONFIG.C_PROBE0_MU_CNT {2} CONFIG.ALL_PROBE_SAME_MU_CNT {2} CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0}] [get_bd_cells system_ila_0]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXIS] [get_bd_intf_pins fir_compiler_0/S_AXIS_DATA]
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_1_AXIS] [get_bd_intf_pins d_axi_i2s_audio_0/AXI_MM2S]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins system_ila_0/clk]
+regenerate_bd_layout
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.C_DATA_DEPTH {4096}] [get_bd_cells system_ila_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/system_wrapper.xsa
+save_wave_config {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+set_property PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/impl_1/system_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_i/system_ila_0/inst/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes system_i/system_ila_0/inst/net_slot_0_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes system_i/system_ila_0/inst/net_slot_1_axis_tlast -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"system_i/system_ila_0/inst/ila_lib"}]]
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:dds_compiler:6.0 dds_compiler_0
+endgroup
+delete_bd_objs [get_bd_cells dds_compiler_0]
+validate_bd_design
+create_ip -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_0
+generate_target {instantiation_template} [get_files p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+catch { config_ip_cache -export [get_ips -all dds_compiler_0] }
+export_ip_user_files -of_objects [get_files p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci]
+launch_runs dds_compiler_0_synth_1 -jobs 16
+wait_on_run dds_compiler_0_synth_1
+export_simulation -of_objects [get_files p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/ip/dds_compiler_0/dds_compiler_0.xci] -directory P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.ip_user_files/sim_scripts -ip_user_files_dir P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.ip_user_files -ipstatic_source_dir P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.ip_user_files/ipstatic -lib_map_path [list {modelsim=P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/compile_simlib/modelsim} {questa=P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/compile_simlib/questa} {riviera=P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/compile_simlib/riviera} {activehdl=P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+file mkdir P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sim_1/new/FIRCompiler_tb.vhd w ]
+add_files -fileset sim_1 P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sim_1/new/FIRCompiler_tb.vhd
+update_compile_order -fileset sim_1
+copy_run -name impl_1_copy_2 [get_runs impl_1] -parent_run synth_1
+set_property target_language VHDL [current_project]
+file mkdir P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new
+close [ open P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/FIRCompilerShell.vhd w ]
+add_files P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/FIRCompilerShell.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FIRCompilerShell [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+export_ip_user_files -of_objects  [get_files P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/FIRCompilerShell.vhd] -no_script -reset -force -quiet
+remove_files  P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/FIRCompilerShell.vhd
+file delete -force P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/FIRCompilerShell.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/design_2/design_2.bd] -top
+add_files -norecurse p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+update_compile_order -fileset sources_1
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/design_2/design_2.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+delete_bd_objs [get_bd_cells processing_system7_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:fir_compiler:7.2 fir_compiler_0
+endgroup
+regenerate_bd_layout
+save_bd_design
+current_bd_design [get_bd_designs system]
+save_bd_design
+current_bd_design [get_bd_designs design_2]
+save_wave_config {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

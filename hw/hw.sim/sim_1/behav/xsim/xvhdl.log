@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/ip/fir_compiler_0/sim/fir_compiler_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fir_compiler_0'

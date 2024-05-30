@@ -1,0 +1,90 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.621336",
+   "Default View_TopLeft":"-198,-322",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port IIC -pg 1 -lvl 14 -x 4680 -y 60 -defaultsOSRD
+preplace port btns_4bits -pg 1 -lvl 14 -x 4680 -y 240 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 14 -x 4680 -y 330 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 14 -x 4680 -y 770 -defaultsOSRD
+preplace port port-id_ac_bclk -pg 1 -lvl 14 -x 4680 -y 410 -defaultsOSRD
+preplace port port-id_ac_mclk -pg 1 -lvl 14 -x 4680 -y 500 -defaultsOSRD
+preplace port port-id_ac_pbdat -pg 1 -lvl 14 -x 4680 -y 530 -defaultsOSRD
+preplace port port-id_ac_pblrc -pg 1 -lvl 14 -x 4680 -y 440 -defaultsOSRD
+preplace port port-id_ac_recdat -pg 1 -lvl 0 -x -90 -y 690 -defaultsOSRD
+preplace port port-id_ac_reclrc -pg 1 -lvl 14 -x 4680 -y 470 -defaultsOSRD
+preplace portBus ac_muten -pg 1 -lvl 14 -x 4680 -y 710 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 810 -y 350 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 13 -x 4500 -y 710 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 2 -x 460 -y 570 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 13 -x 4500 -y 250 -defaultsOSRD
+preplace inst axi_iic_0 -pg 1 -lvl 13 -x 4500 -y 80 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 3 -x 810 -y 600 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 4 -x 1180 -y 620 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 5 -x 1580 -y 280 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 110 -y 790 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 2 -x 460 -y 780 -defaultsOSRD
+preplace inst downsize_tdata_from_0 -pg 1 -lvl 8 -x 2490 -y 430 -defaultsOSRD
+preplace inst d_axi_i2s_audio_0 -pg 1 -lvl 13 -x 4500 -y 480 -defaultsOSRD
+preplace inst d_axi_i2s_audio_1 -pg 1 -lvl 6 -x 1920 -y 450 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 10 -x 3170 -y 370 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 7 -x 2200 -y 430 -defaultsOSRD
+preplace inst AudioConfig_v1_0_0 -pg 1 -lvl 6 -x 1920 -y 690 -defaultsOSRD
+preplace inst fir_compiler_1 -pg 1 -lvl 10 -x 3170 -y 490 -defaultsOSRD
+preplace inst fir_compiler_2 -pg 1 -lvl 10 -x 3170 -y 660 -defaultsOSRD
+preplace inst AXISBroadcaster_0 -pg 1 -lvl 9 -x 2830 -y 540 -defaultsOSRD
+preplace inst AudioFilterSelect_0 -pg 1 -lvl 11 -x 3590 -y 680 -defaultsOSRD
+preplace inst AGC_0 -pg 1 -lvl 12 -x 4070 -y 560 -defaultsOSRD
+preplace netloc AudioConfig_v1_0_0_AudioConfig 1 6 6 N 690 NJ 690 2660 730 NJ 730 3310 960 3830
+preplace netloc ac_recdat_1 1 0 6 -70J 440 NJ 440 NJ 440 NJ 440 1410J 500 1720J
+preplace netloc axi_dma_0_mm2s_introut 1 2 1 620 360n
+preplace netloc axi_dma_0_s2mm_introut 1 2 1 640 380n
+preplace netloc axi_gpio_0_ip2intc_irpt 1 2 12 650 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 NJ 40 4350J 170 4650
+preplace netloc axi_i2s_adi_0_LRCLK_O 1 13 1 4660 440n
+preplace netloc axi_iic_0_iic2intc_irpt 1 2 12 660 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 NJ 50 4340J 160 4650
+preplace netloc d_axi_i2s_audio_0_BCLK_O 1 13 1 4650J 410n
+preplace netloc d_axi_i2s_audio_0_MCLK_O 1 13 1 NJ 500
+preplace netloc d_axi_i2s_audio_0_SDATA_O 1 13 1 4660J 520n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 13 -60 690 280 870 660 750 960 770 1420 520 1770 300 2070 510 NJ 510 2650J 450 3020 580 3320 970 3850J 680 4310
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 5 -60 890 NJ 890 NJ 890 NJ 890 1400
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 4 290 690 630 160 NJ 160 N
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 12 300 880 650 450 NJ 450 1430 510 1740 280 2080 300 NJ 300 NJ 300 NJ 300 NJ 300 NJ 300 4330
+preplace netloc xlconcat_0_dout 1 3 1 950 350n
+preplace netloc xlconstant_0_dout 1 13 1 NJ 710
+preplace netloc AXISBroadcaster_0_M_AXIS_DATA_cf 1 9 1 3000 360n
+preplace netloc AXISBroadcaster_0_M_AXIS_DATA_d 1 9 1 3010 480n
+preplace netloc AXISBroadcaster_0_M_AXIS_DATA_i 1 9 1 3000 550n
+preplace netloc AXISBroadcaster_0_M_AXIS_DATA_pt 1 9 2 NJ 570 3350
+preplace netloc axi_dma_0_M_AXI_MM2S 1 2 1 N 510
+preplace netloc axi_dma_0_M_AXI_S2MM 1 2 1 N 530
+preplace netloc axi_gpio_0_GPIO 1 13 1 NJ 240
+preplace netloc axi_iic_0_IIC 1 13 1 NJ 60
+preplace netloc axi_mem_intercon_M00_AXI 1 3 1 N 600
+preplace netloc axis_data_fifo_0_M_AXIS 1 7 1 NJ 430
+preplace netloc d_axi_i2s_audio_1_AXI_S2MM 1 6 1 N 410
+preplace netloc downsize_tdata_from_0_S_AXIS_DATA 1 8 1 2660 430n
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 10 1 3360 370n
+preplace netloc fir_compiler_1_M_AXIS_DATA 1 10 1 3360 490n
+preplace netloc fir_compiler_2_M_AXIS_DATA 1 10 1 3340 660n
+preplace netloc processing_system7_0_DDR 1 4 10 NJ 530 1750J 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 4290J 330 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 4 10 NJ 550 1720J 600 NJ 600 NJ 600 2650J 630 3030J 590 3330J 950 3840J 770 NJ 770 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 4 1 1400 120n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 5 8 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 NJ 230 N
+preplace netloc ps7_0_axi_periph_M01_AXI 1 5 8 1740 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc ps7_0_axi_periph_M02_AXI 1 5 8 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 NJ 270 4300
+preplace netloc ps7_0_axi_periph_M03_AXI 1 1 5 280 60 NJ 60 NJ 60 NJ 60 1730
+preplace netloc ps7_0_axi_periph_M04_AXI 1 5 1 1760 310n
+preplace netloc ps7_0_axi_periph_M05_AXI 1 5 1 1730 330n
+preplace netloc AudioFilterSelect_0_S_AXIS_MM2S 1 11 1 3820J 500n
+preplace netloc AGC_0_S_AXIS_DATA 1 12 1 4320 410n
+levelinfo -pg 1 -90 110 460 810 1180 1580 1920 2200 2490 2830 3170 3590 4070 4500 4680
+pagesize -pg 1 -db -bbox -sgen -200 0 4820 1100
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_clkrst_cnt":"8",
+   "da_ps7_cnt":"2"
+}

@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May 29 11:15:43 2024
+# Process ID: 13584
+# Current directory: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19872 P:\24spring\engs128\workspace\Nestor_Jason\FinalProject-128\Zybo-Z7-10-DMA-hw.xpr\hw\hw.xpr
+# Log file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/vivado.log
+# Journal file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw\vivado.jou
+# Running On: cadlab-05, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 33979 MB
+#-----------------------------------------------------------
+start_gui
+open_project P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.xpr
+update_compile_order -fileset sources_1
+open_bd_design {P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/bd/system/system.bd}
+set_property location {11 3765 513} [get_bd_cells AudioFilterSelect_0]
+regenerate_bd_layout

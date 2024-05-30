@@ -1,0 +1,893 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun May 26 19:09:03 2024
+# Process ID: 3732
+# Current directory: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1
+# Command line: vivado.exe -log system_d_axi_i2s_audio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_d_axi_i2s_audio_0_0.tcl
+# Log file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/system_d_axi_i2s_audio_0_0.vds
+# Journal file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1\vivado.jou
+# Running On: cadlab-04, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 33979 MB
+#-----------------------------------------------------------
+source system_d_axi_i2s_audio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/ip 
+Command: synth_design -top system_d_axi_i2s_audio_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17272
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1240.332 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_d_axi_i2s_audio_0_0' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/synth/system_d_axi_i2s_audio_0_0.vhd:102]
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_AXI_STREAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_L_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_L_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'd_axi_i2s_audio_v2_0' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0.vhd:6' bound to instance 'U0' of component 'd_axi_i2s_audio_v2_0' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/synth/system_d_axi_i2s_audio_0_0.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'd_axi_i2s_audio_v2_0' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0.vhd:73]
+	Parameter C_AXI_STREAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'd_axi_i2s_audio_v2_0_AXI_L' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:6' bound to instance 'd_axi_i2s_audio_v2_0_AXI_L_inst' of component 'd_axi_i2s_audio_v2_0_AXI_L' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'd_axi_i2s_audio_v2_0_AXI_L' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:111]
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_rx_tx' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:27' bound to instance 'Inst_I2sCtl' of component 'i2s_rx_tx' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:378]
+INFO: [Synth 8-638] synthesizing module 'i2s_rx_tx' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:100]
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_ctl' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_ctl.vhd:36' bound to instance 'Inst_I2sRxTx' of component 'i2s_ctl' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:238]
+INFO: [Synth 8-638] synthesizing module 'i2s_ctl' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_ctl.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'i2s_ctl' (1#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_ctl.vhd:67]
+INFO: [Synth 8-3491] module 'fifo_4' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/synth/fifo_4.vhd:59' bound to instance 'Inst_Sampling' of component 'fifo_4' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'fifo_4' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/synth/fifo_4.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 4 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 4 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 512x36 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 13 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 12 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_RD_DEPTH bound to: 16 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_DEPTH bound to: 16 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 4 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_6' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/8ae1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_6' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/synth/fifo_4.vhd:543]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (2#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1175]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (3#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (15#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'fifo_4' (29#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/synth/fifo_4.vhd:73]
+INFO: [Synth 8-3491] module 'fifo_32' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/synth/fifo_32.vhd:59' bound to instance 'Inst_I2sTxFifo' of component 'fifo_32' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'fifo_32' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/synth/fifo_32.vhd:73]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 24 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 24 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 4kx9 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 4093 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 4092 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_RD_DEPTH bound to: 4096 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_DEPTH bound to: 4096 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 12 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_6' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/8ae1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_6' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/synth/fifo_32.vhd:543]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (29#1) [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'fifo_32' (30#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/synth/fifo_32.vhd:73]
+INFO: [Synth 8-3491] module 'fifo_32' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/synth/fifo_32.vhd:59' bound to instance 'Inst_I2sRxFifo' of component 'fifo_32' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:314]
+INFO: [Synth 8-3491] module 'DCM' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/DCM.vhd:74' bound to instance 'Inst_Dcm' of component 'DCM' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:347]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_DCM' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/DCM.vhd:86]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 51 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 83 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+INFO: [Synth 8-113] binding component instance 'plle2_adv_inst' to cell 'PLLE2_ADV' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/DCM.vhd:127]
+INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/DCM.vhd:179]
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_DCM' (31#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/DCM.vhd:86]
+INFO: [Synth 8-3491] module 'Sync_ff' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:23' bound to instance 'Inst_SyncBit_RX_RS' of component 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:359]
+INFO: [Synth 8-638] synthesizing module 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:34]
+INFO: [Synth 8-256] done synthesizing module 'Sync_ff' (32#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:34]
+INFO: [Synth 8-3491] module 'Sync_ff' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:23' bound to instance 'Inst_SyncBit_TX_RS' of component 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:368]
+INFO: [Synth 8-3491] module 'Sync_ff' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:23' bound to instance 'Inst_SyncBit_CTL_MM' of component 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:377]
+INFO: [Synth 8-3491] module 'rst_sync' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:37' bound to instance 'Inst_Rst_Sync_TX_RST' of component 'rst_sync' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:386]
+INFO: [Synth 8-638] synthesizing module 'rst_sync' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:43]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_1' to cell 'FDPE' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:50]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst_2' to cell 'FDPE' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'rst_sync' (33#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:43]
+INFO: [Synth 8-3491] module 'rst_sync' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/rst_sync.vhd:37' bound to instance 'Inst_Rst_Sync_RST' of component 'rst_sync' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:395]
+INFO: [Synth 8-3491] module 'Sync_ff' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:23' bound to instance 'Inst_SyncBit_Tx_Empty' of component 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:404]
+INFO: [Synth 8-3491] module 'Sync_ff' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/Sync_ff.vhd:23' bound to instance 'Inst_SyncBit_Rx_Full' of component 'Sync_ff' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:413]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-113] binding component instance 'ODDR_inst' to cell 'ODDR' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:422]
+WARNING: [Synth 8-3848] Net DBG_RX_FIFO_FULL_O in module/entity i2s_rx_tx does not have driver. [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'i2s_rx_tx' (34#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_rx_tx.vhd:100]
+	Parameter C_AXI_STREAM_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'i2s_stream' declared at 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_stream.vhd:30' bound to instance 'Inst_I2sStream' of component 'i2s_stream' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:433]
+INFO: [Synth 8-638] synthesizing module 'i2s_stream' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_stream.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'i2s_stream' (35#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/i2s_stream.vhd:77]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:552]
+INFO: [Synth 8-256] done synthesizing module 'd_axi_i2s_audio_v2_0_AXI_L' (36#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0_AXI_L.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'd_axi_i2s_audio_v2_0' (37#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ipshared/3bba/src/d_axi_i2s_audio_v2_0.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'system_d_axi_i2s_audio_0_0' (38#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/synth/system_d_axi_i2s_audio_0_0.vhd:102]
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[31] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[30] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[29] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[28] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[27] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[26] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[25] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TDATA_I[24] in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXIS_MM2S_TLAST_I in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_AXIS_S2MM_TREADY_I in module i2s_stream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VALID_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[12] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[11] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[10] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[9] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[8] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[7] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[6] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[12] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[11] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[10] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[9] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[8] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[7] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[6] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[12] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[11] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[10] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[9] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[8] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[7] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[6] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[5] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[11] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[10] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[9] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[8] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[7] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[6] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[5] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[4] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST in module wr_bin_cntr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST_FULL_FF in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_RD_EN in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[11] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[10] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[9] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[8] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[7] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[6] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[5] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[4] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[11] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[10] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[9] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[8] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[7] in module wr_logic__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:44 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1611.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 57 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0'
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0'
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0'
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc] for cell 'U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc] for cell 'U0'
+Parsing XDC File [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_4/fifo_4_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0'
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0'
+Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0'
+Finished Parsing XDC File [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/fifo_32/fifo_32_clocks.xdc] for cell 'U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2021.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_d_axi_i2s_audio_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 18 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1611.430 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property ASYNC_REG = true for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Rst_Sync_RST. (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+Applied set_property ASYNC_REG = true for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Rst_Sync_TX_RST. (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+WARNING: set_property ASYNC_REG could not find object (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+WARNING: set_property ASYNC_REG could not find object (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+WARNING: set_property ASYNC_REG could not find object (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+WARNING: set_property ASYNC_REG could not find object (constraint file  p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_d_axi_i2s_audio_0_0/src/d_axi_i2s_audio.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0. (constraint file  P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0. (constraint file  P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc, line 14).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc, line 21).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0. (constraint file  P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/dont_touch.xdc, line 24).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.rst_rd_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_Sampling/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sTxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for U0/d_axi_i2s_audio_v2_0_AXI_L_inst/Inst_I2sCtl/Inst_I2sRxFifo/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gnsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:53 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:41 ; elapsed = 00:00:56 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---XORs : 
+	   2 Input     12 Bit         XORs := 4     
+	   2 Input      4 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 162   
++---Registers : 
+	               32 Bit    Registers := 13    
+	               31 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               21 Bit    Registers := 2     
+	               12 Bit    Registers := 22    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 22    
+	                2 Bit    Registers := 16    
+	                1 Bit    Registers := 58    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 13    
+	   9 Input   32 Bit        Muxes := 8     
+	   2 Input   24 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 2     
+	   8 Input    5 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 20    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:59 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:03 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:03 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin d_axi_i2s_audio_v2_0_AXI_L_inst/DBG_RX_FIFO_FULL_O_inferred:in0 to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    22|
+|3     |LUT1      |    50|
+|4     |LUT2      |   130|
+|5     |LUT3      |    57|
+|6     |LUT4      |   111|
+|7     |LUT5      |    76|
+|8     |LUT6      |   149|
+|9     |MUXCY     |    48|
+|10    |ODDR      |     1|
+|11    |PLLE2_ADV |     1|
+|12    |RAMB18E1  |     1|
+|13    |RAMB36E1  |     6|
+|14    |FDCE      |   149|
+|15    |FDPE      |    58|
+|16    |FDRE      |   782|
+|17    |FDSE      |     4|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1894 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:01:04 . Memory (MB): peak = 1611.430 ; gain = 371.098
+Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:01:06 . Memory (MB): peak = 1611.430 ; gain = 371.098
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1611.430 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1611.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 16 instances
+
+Synth Design complete, checksum: c771ec83
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:52 ; elapsed = 00:01:13 . Memory (MB): peak = 1611.430 ; gain = 371.098
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/system_d_axi_i2s_audio_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_d_axi_i2s_audio_0_0, cache-ID = e94b916a9d106cc1
+INFO: [Coretcl 2-1174] Renamed 107 cell refs.
+INFO: [Common 17-1381] The checkpoint 'P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_d_axi_i2s_audio_0_0_synth_1/system_d_axi_i2s_audio_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_d_axi_i2s_audio_0_0_utilization_synth.rpt -pb system_d_axi_i2s_audio_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 26 19:10:29 2024...

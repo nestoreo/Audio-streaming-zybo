@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:design xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>ipcache</spirit:library>
+  <spirit:name>13cf21e8c23bd3dd</spirit:name>
+  <spirit:version>0</spirit:version>
+  <spirit:componentInstances>
+    <spirit:componentInstance>
+      <spirit:instanceName>system_fir_compiler_2_0</spirit:instanceName>
+      <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="fir_compiler" spirit:version="7.2"/>
+      <spirit:configurableElementValues>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.ACLK_INTF.FREQ_HZ">1e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.M_AXIS_DATA.FREQ_HZ">1e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.S_AXIS_DATA.FREQ_HZ">1e+08</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.BestPrecision">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Blank_Output">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Channel_Sequence">Basic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Clock_Frequency">100</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CoefficientSource">Vector</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CoefficientVector">0.0001203454544 8.08E-06 8.26E-06 8.38E-06 8.44E-06 8.43E-06 8.35E-06 8.20E-06 7.98E-06 7.68E-06 7.29E-06 6.83E-06 6.29E-06 5.66E-06 4.95E-06 4.16E-06 3.28E-06 2.33E-06 1.30E-06 1.94E-07 -9.83E-07 -2.23E-06 -3.53E-06 -4.90E-06 -6.31E-06 -7.78E-06 -9.29E-06 -1.08E-05 -1.24E-05 -1.40E-05 -1.56E-05 -1.73E-05 -1.89E-05 -2.05E-05 -2.21E-05 -2.37E-05 -2.51E-05 -2.66E-05 -2.80E-05 -2.95E-05 -3.06E-05 -3.18E-05 -3.28E-05 -3.38E-05 -3.46E-05 -3.53E-05 -3.59E-05 -3.63E-05 -3.65E-05 -3.66E-05 -3.65E-05 -3.
+63E-05 -3.58E-05 -3.52E-05 -3.43E-05 -3.33E-05 -3.21E-05 -3.07E-05 -2.90E-05 -2.72E-05 -2.52E-05 -2.29E-05 -2.05E-05 -1.79E-05 -1.51E-05 -1.21E-05 -9.01E-06 -5.72E-06 -2.29E-06 1.28E-06 4.98E-06 8.78E-06 1.27E-05 1.67E-05 2.07E-05 2.48E-05 2.89E-05 3.30E-05 3.71E-05 4.11E-05 4.51E-05 4.91E-05 5.29E-05 5.66E-05 6.01E-05 6.35E-05 6.67E-05 6.97E-05 7.25E-05 7.50E-05 7.72E-05 7.92E-05 8.08E-05 8.21E-05 8.31E-05 8.37E-05 8.39E-05 8.37E-05 8.31E-05 8.22E-05 8.08E-05 7.89E-05 7.67E-05 7.40E-05 7.09E-05
+ 6.73E-05 6.33E-05 5.89E-05 5.41E-05 4.89E-05 4.33E-05 3.73E-05 3.09E-05 2.42E-05 1.72E-05 9.94E-06 2.38E-06 -5.43E-06 -1.34E-05 -2.16E-05 -3.00E-05 -3.84E-05 -4.69E-05 -5.55E-05 -6.40E-05 -7.25E-05 -8.09E-05 -8.92E-05 -9.73E-05 -0.00010518684 -0.0001128222222 -0.0001201535348 -0.0001271433031 -0.0001337434539 -0.0001399173394 -0.0001456187417 -0.0001508134831 -0.000155458327 -0.0001595215625 -0.0001629634783 -0.0001657561809 -0.0001678629459 -0.0001692606431 -0.0001699178379 -0.0001698169396 -0
+.0001689331801 -0.0001672562565 -0.0001647671907 -0.0001614607787 -0.0001573238482 -0.0001523584308 -0.0001465608312 -0.0001399443605 -0.0001325143255 -0.0001242862891 -0.0001152665571 -0.0001054865354 -9.50E-05 -8.38E-05 -7.19E-05 -5.93E-05 -4.62E-05 -3.25E-05 -1.84E-05 -3.76E-06 1.12E-05 2.66E-05 4.22E-05 5.80E-05 7.39E-05 8.99E-05 0.0001059340179 0.0001218510369 0.0001376147146 0.0001531432181 0.0001683648283 0.0001831969187 0.0001975669914 0.0002113932398 0.0002246043744 0.0002371191159 0.00
+02488687742 0.0002597749871 0.0002697726557 0.0002787891094 0.000286766187 0.0002936372407 0.0002993499861 0.0003038442914 0.0003070755423 0.0003089937461 0.0003095668448 0.0003087559464 0.0003065351833 0.0003028729351 0.0002977625292 0.0002911943626 0.000283152843 0.0002736524094 0.0002626980733 0.0002503041853 0.0002364989394 0.00022130728 0.0002047721461 0.0001869322735 0.0001678450643 0.0001475633207 0.0001261578232 0.0001036946289 8.03E-05 5.59E-05 3.08E-05 4.95E-06 -2.15E-05 -4.84E-05 -7.5
+8E-05 -0.0001033585117 -0.0001311092499 -0.0001588933115 -0.0001865801648 -0.0002140482089 -0.0002411621448 -0.0002677965465 -0.0002938150655 -0.0003190928931 -0.0003434941544 -0.0003668952741 -0.0003891625436 -0.0004101757711 -0.0004298074718 -0.0004479465855 -0.0004644739794 -0.0004792837496 -0.0004922648258 -0.0005033290955 -0.0005123822791 -0.0005193357061 -0.0005241202832 -0.0005266654221 -0.0005269101147 -0.0005248092114 -0.0005203170408 -0.0005134087696 -0.0005040586339 -0.0004922632344 -
+0.0004780185011 -0.0004613428668 -0.0004422546549 -0.0004207949462 -0.0003970045398 -0.0003709472794 -0.0003426872832 -0.0003123110451 -0.0002799055492 -0.000245579632 -0.0002094426928 -0.0001716240066 -0.0001322532104 -9.15E-05 -4.95E-05 -6.34E-06 3.77E-05 8.25E-05 0.000127795295 0.0001734841651 0.0002193423581 0.0002651620128 0.0003107424605 0.0003558694963 0.0004003393603 0.0004439345222 0.0004864462317 0.0005276562203 0.0005673630241 0.0006053534705 0.0006414225608 0.0006753741473 0.00070701
+25485 0.0007361480625 0.0007626050675 0.0007862064025 0.0008067949863 0.0008242126972 0.0008383242465 0.0008489946985 0.0008561135023 0.0008595723138 0.0008592885128 0.0008551826836 0.0008472026109 0.0008353007728 0.0008194572978 0.0007996585735 0.0007759193217 0.0007482618366 0.000716735766 0.0006813993483 0.0006423389691 0.0005996478757 0.0005534497455 0.0005038746806 0.0004510810873 0.0003952333816 0.0003365243225 0.000275151415 0.0002113400506 0.0001453196008 7.73E-05 7.67E-06 -6.34E-05 -0.0
+001356533043 -0.0002087162131 -0.0002823137689 -0.000356124365 -0.0004298276108 -0.0005030964292 -0.0005755978013 -0.0006469938647 -0.000716951761 -0.0007851286529 -0.0008511935926 -0.0009148070643 -0.000975645388 -0.001033378894 -0.001087696869 -0.001138286007 -0.001184854825 -0.001227111985 -0.00126479119 -0.001297629273 -0.001325390274 -0.001347844829 -0.001364793309 -0.001376046021 -0.001381443932 -0.001380841211 -0.001374124969 -0.001361195604 -0.001341991217 -0.001316464186 -0.001284604503
+ -0.00124641834 -0.001201951007 -0.001151264206 -0.001094460267 -0.001031658887 -0.0009630189718 -0.0008887155931 -0.0008089647359 -0.0007239998863 -0.0006340916982 -0.0005395246722 -0.0004406238355 -0.0003377288715 -0.000231208251 -0.0001214522134 -8.88E-06 0.0001060920575 0.0002229939342 0.0003413653149 0.0004607145595 0.0005805473666 0.0007003452598 0.0008195910348 0.0009377475345 0.001054282753 0.001168648853 0.001280307818 0.00138871013 0.001493319928 0.001593595152 0.001689011821 0.0017790
+45334 0.001863192357 0.001940954991 0.002011860921 0.002075446023 0.002131279795 0.002178943088 0.002218053536 0.002248245507 0.002269194341 0.002280595277 0.002282189505 0.00227374237 0.002255067 0.002226003089 0.002186443175 0.002136310369 0.002075580166 0.002004259388 0.001922413251 0.001830140186 0.001727591442 0.001614960609 0.001492491511 0.00136046722 0.001219226267 0.001069142322 0.0009106453536 0.0007441983333 0.0005703196553 0.0003895585281 0.0002025171247 9.83E-06 -0.0001878343268 -0.
+0003897588363 -0.0005951960083 -0.0008033730822 -0.001013475878 -0.001224673215 -0.001436098343 -0.00164687114 -0.001856083098 -0.002062817056 -0.00226613167 -0.002465086966 -0.00265872288 -0.002846086444 -0.003026212701 -0.003198149996 -0.003360940534 -0.003513648108 -0.003655337772 -0.003785101402 -0.003902038564 -0.004005284675 -0.004093990481 -0.004167346616 -0.004224565194 -0.00426490812 -0.004287664206 -0.004292173865 -0.00427781743 -0.004244028608 -0.004190284906 -0.004116126654 -0.004021
+139526 -0.003904978249 -0.00376734615 -0.003608020193 -0.003426829104 -0.003223678369 -0.002998528238 -0.00275141776 -0.002482442151 -0.002191777099 -0.001879655891 -0.001546392137 -0.001192357515 -0.0008180025713 -0.0004238365595 -1.04E-05 0.000421531933 0.0008713740384 0.001338313513 0.001821507341 0.002320064845 0.002833027069 0.003359390874 0.003898088965 0.004448016996 0.005008012513 0.005576880321 0.006153373398 0.006736220921 0.007324107774 0.007915700038 0.008509627337 0.009104510967 0.0
+09698942242 0.01029150993 0.01088078704 0.01146534826 0.0120437609 0.01261460602 0.01317646303 0.01372793548 0.01426763298 0.01479419861 0.01530628967 0.01580260553 0.01628186848 0.0167428507 0.01718435479 0.01760524127 0.01800440889 0.01838082093 0.01873348628 0.01906148384 0.01936394586 0.01964007779 0.01988914618 0.02011049639 0.02030353501 0.02046775588 0.02060271653 0.02070806291 0.02078350905 0.02082886012 0.02084398882 0.02082886012 0.02078350905 0.02070806291 0.02060271653 0.02046775588 
+0.02030353501 0.02011049639 0.01988914618 0.01964007779 0.01936394586 0.01906148384 0.01873348628 0.01838082093 0.01800440889 0.01760524127 0.01718435479 0.0167428507 0.01628186848 0.01580260553 0.01530628967 0.01479419861 0.01426763298 0.01372793548 0.01317646303 0.01261460602 0.0120437609 0.01146534826 0.01088078704 0.01029150993 0.009698942242 0.009104510967 0.008509627337 0.007915700038 0.007324107774 0.006736220921 0.006153373398 0.005576880321 0.005008012513 0.004448016996 0.003898088965 0
+.003359390874 0.002833027069 0.002320064845 0.001821507341 0.001338313513 0.0008713740384 0.000421531933 -1.04E-05 -0.0004238365595 -0.0008180025713 -0.001192357515 -0.001546392137 -0.001879655891 -0.002191777099 -0.002482442151 -0.00275141776 -0.002998528238 -0.003223678369 -0.003426829104 -0.003608020193 -0.00376734615 -0.003904978249 -0.004021139526 -0.004116126654 -0.004190284906 -0.004244028608 -0.00427781743 -0.004292173865 -0.004287664206 -0.00426490812 -0.004224565194 -0.004167346616 -0.
+004093990481 -0.004005284675 -0.003902038564 -0.003785101402 -0.003655337772 -0.003513648108 -0.003360940534 -0.003198149996 -0.003026212701 -0.002846086444 -0.00265872288 -0.002465086966 -0.00226613167 -0.002062817056 -0.001856083098 -0.00164687114 -0.001436098343 -0.001224673215 -0.001013475878 -0.0008033730822 -0.0005951960083 -0.0003897588363 -0.0001878343268 9.83E-06 0.0002025171247 0.0003895585281 0.0005703196553 0.0007441983333 0.0009106453536 0.001069142322 0.001219226267 0.00136046722 0
+.001492491511 0.001614960609 0.001727591442 0.001830140186 0.001922413251 0.002004259388 0.002075580166 0.002136310369 0.002186443175 0.002226003089 0.002255067 0.00227374237 0.002282189505 0.002280595277 0.002269194341 0.002248245507 0.002218053536 0.002178943088 0.002131279795 0.002075446023 0.002011860921 0.001940954991 0.001863192357 0.001779045334 0.001689011821 0.001593595152 0.001493319928 0.00138871013 0.001280307818 0.001168648853 0.001054282753 0.0009377475345 0.0008195910348 0.0007003
+452598 0.0005805473666 0.0004607145595 0.0003413653149 0.0002229939342 0.0001060920575 -8.88E-06 -0.0001214522134 -0.000231208251 -0.0003377288715 -0.0004406238355 -0.0005395246722 -0.0006340916982 -0.0007239998863 -0.0008089647359 -0.0008887155931 -0.0009630189718 -0.001031658887 -0.001094460267 -0.001151264206 -0.001201951007 -0.00124641834 -0.001284604503 -0.001316464186 -0.001341991217 -0.001361195604 -0.001374124969 -0.001380841211 -0.001381443932 -0.001376046021 -0.001364793309 -0.00134784
+4829 -0.001325390274 -0.001297629273 -0.00126479119 -0.001227111985 -0.001184854825 -0.001138286007 -0.001087696869 -0.001033378894 -0.000975645388 -0.0009148070643 -0.0008511935926 -0.0007851286529 -0.000716951761 -0.0006469938647 -0.0005755978013 -0.0005030964292 -0.0004298276108 -0.000356124365 -0.0002823137689 -0.0002087162131 -0.0001356533043 -6.34E-05 7.67E-06 7.73E-05 0.0001453196008 0.0002113400506 0.000275151415 0.0003365243225 0.0003952333816 0.0004510810873 0.0005038746806 0.000553449
+7455 0.0005996478757 0.0006423389691 0.0006813993483 0.000716735766 0.0007482618366 0.0007759193217 0.0007996585735 0.0008194572978 0.0008353007728 0.0008472026109 0.0008551826836 0.0008592885128 0.0008595723138 0.0008561135023 0.0008489946985 0.0008383242465 0.0008242126972 0.0008067949863 0.0007862064025 0.0007626050675 0.0007361480625 0.0007070125485 0.0006753741473 0.0006414225608 0.0006053534705 0.0005673630241 0.0005276562203 0.0004864462317 0.0004439345222 0.0004003393603 0.0003558694963 
+0.0003107424605 0.0002651620128 0.0002193423581 0.0001734841651 0.000127795295 8.25E-05 3.77E-05 -6.34E-06 -4.95E-05 -9.15E-05 -0.0001322532104 -0.0001716240066 -0.0002094426928 -0.000245579632 -0.0002799055492 -0.0003123110451 -0.0003426872832 -0.0003709472794 -0.0003970045398 -0.0004207949462 -0.0004422546549 -0.0004613428668 -0.0004780185011 -0.0004922632344 -0.0005040586339 -0.0005134087696 -0.0005203170408 -0.0005248092114 -0.0005269101147 -0.0005266654221 -0.0005241202832 -0.0005193357061 
+-0.0005123822791 -0.0005033290955 -0.0004922648258 -0.0004792837496 -0.0004644739794 -0.0004479465855 -0.0004298074718 -0.0004101757711 -0.0003891625436 -0.0003668952741 -0.0003434941544 -0.0003190928931 -0.0002938150655 -0.0002677965465 -0.0002411621448 -0.0002140482089 -0.0001865801648 -0.0001588933115 -0.0001311092499 -0.0001033585117 -7.58E-05 -4.84E-05 -2.15E-05 4.95E-06 3.08E-05 5.59E-05 8.03E-05 0.0001036946289 0.0001261578232 0.0001475633207 0.0001678450643 0.0001869322735 0.000204772146
+1 0.00022130728 0.0002364989394 0.0002503041853 0.0002626980733 0.0002736524094 0.000283152843 0.0002911943626 0.0002977625292 0.0003028729351 0.0003065351833 0.0003087559464 0.0003095668448 0.0003089937461 0.0003070755423 0.0003038442914 0.0002993499861 0.0002936372407 0.000286766187 0.0002787891094 0.0002697726557 0.0002597749871 0.0002488687742 0.0002371191159 0.0002246043744 0.0002113932398 0.0001975669914 0.0001831969187 0.0001683648283 0.0001531432181 0.0001376147146 0.0001218510369 0.0001
+059340179 8.99E-05 7.39E-05 5.80E-05 4.22E-05 2.66E-05 1.12E-05 -3.76E-06 -1.84E-05 -3.25E-05 -4.62E-05 -5.93E-05 -7.19E-05 -8.38E-05 -9.50E-05 -0.0001054865354 -0.0001152665571 -0.0001242862891 -0.0001325143255 -0.0001399443605 -0.0001465608312 -0.0001523584308 -0.0001573238482 -0.0001614607787 -0.0001647671907 -0.0001672562565 -0.0001689331801 -0.0001698169396 -0.0001699178379 -0.0001692606431 -0.0001678629459 -0.0001657561809 -0.0001629634783 -0.0001595215625 -0.000155458327 -0.0001508134831 
+-0.0001456187417 -0.0001399173394 -0.0001337434539 -0.0001271433031 -0.0001201535348 -0.0001128222222 -0.00010518684 -9.73E-05 -8.92E-05 -8.09E-05 -7.25E-05 -6.40E-05 -5.55E-05 -4.69E-05 -3.84E-05 -3.00E-05 -2.16E-05 -1.34E-05 -5.43E-06 2.38E-06 9.94E-06 1.72E-05 2.42E-05 3.09E-05 3.73E-05 4.33E-05 4.89E-05 5.41E-05 5.89E-05 6.33E-05 6.73E-05 7.09E-05 7.40E-05 7.67E-05 7.89E-05 8.08E-05 8.22E-05 8.31E-05 8.37E-05 8.39E-05 8.37E-05 8.31E-05 8.21E-05 8.08E-05 7.92E-05 7.72E-05 7.50E-05 7.25E-05 6.
+97E-05 6.67E-05 6.35E-05 6.01E-05 5.66E-05 5.29E-05 4.91E-05 4.51E-05 4.11E-05 3.71E-05 3.30E-05 2.89E-05 2.48E-05 2.07E-05 1.67E-05 1.27E-05 8.78E-06 4.98E-06 1.28E-06 -2.29E-06 -5.72E-06 -9.01E-06 -1.21E-05 -1.51E-05 -1.79E-05 -2.05E-05 -2.29E-05 -2.52E-05 -2.72E-05 -2.90E-05 -3.07E-05 -3.21E-05 -3.33E-05 -3.43E-05 -3.52E-05 -3.58E-05 -3.63E-05 -3.65E-05 -3.66E-05 -3.65E-05 -3.63E-05 -3.59E-05 -3.53E-05 -3.46E-05 -3.38E-05 -3.28E-05 -3.18E-05 -3.06E-05 -2.95E-05 -2.80E-05 -2.66E-05 -2.51E-05 -
+2.37E-05 -2.21E-05 -2.05E-05 -1.89E-05 -1.73E-05 -1.56E-05 -1.40E-05 -1.24E-05 -1.08E-05 -9.29E-06 -7.78E-06 -6.31E-06 -4.90E-06 -3.53E-06 -2.23E-06 -9.83E-07 1.94E-07 1.30E-06 2.33E-06 3.28E-06 4.16E-06 4.95E-06 5.66E-06 6.29E-06 6.83E-06 7.29E-06 7.68E-06 7.98E-06 8.20E-06 8.35E-06 8.43E-06 8.44E-06 8.38E-06 8.26E-06 8.08E-06 0.0001203454544</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Buffer_Type">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Fanout">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_File">no_coe_file_loaded</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Fractional_Bits">20</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Reload">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Sets">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Sign">Signed</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Structure">Inferred</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Coefficient_Width">16</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.ColumnConfig">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">system_fir_compiler_2_0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Control_Broadcast_Fanout">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Control_Column_Fanout">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Control_LUT_Pipeline">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Control_Path_Fanout">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DATA_Has_TLAST">Packet_Framing</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DATA_TUSER_Width">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Buffer_Type">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Fractional_Bits">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Path_Broadcast">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Path_Fanout">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Sign">Signed</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Data_Width">24</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Decimation_Rate">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Disable_Half_Band_Centre_Tap">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.DisplayReloadOrder">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Filter_Architecture">Systolic_Multiply_Accumulate</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Filter_Selection">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Filter_Type">Single_Rate</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.GUI_Behaviour">Coregen</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Gen_MIF_Files">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Gen_MIF_from_COE">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Gen_MIF_from_Spec">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.HardwareOversamplingRate">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Has_ACLKEN">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Has_ARESETn">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Input_Buffer_Type">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Inter_Column_Pipe_Length">4</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Interpolation_Rate">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.M_DATA_Has_TREADY">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.M_DATA_Has_TUSER">Not_Required</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Multi_Column_Support">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.No_BRAM_Read_First_Mode">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.No_SRL_Attributes">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Num_Reload_Slots">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Number_Channels">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Number_Paths">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Optimal_Column_Lengths">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Optimization_Goal">Area</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Optimization_List">None</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Optimization_Selection">None</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Other">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Output_Buffer_Type">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Output_Rounding_Mode">Full_Precision</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Output_Width">45</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Passband_Max">0.5</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Passband_Min">0.0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Pattern_List">P4-0,P4-1,P4-2,P4-3,P4-4</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Pre_Adder_Pipeline">false</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Preference_For_Other_Storage">Automatic</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Quantization">Quantize_Only</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.RateSpecification">Frequency_Specification</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Rate_Change_Type">Integer</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Reload_File">no_coe_file_loaded</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Reset_Data_Vector">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.S_CONFIG_Method">Single</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.S_CONFIG_Sync_Mode">On_Vector</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.S_DATA_Has_FIFO">true</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.S_DATA_Has_TUSER">Not_Required</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.SamplePeriod">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Sample_Frequency">0.048</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Select_Pattern">All</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Stopband_Max">1.0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Stopband_Min">0.5</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Zero_Pack_Factor">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">zynq</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BASE_BOARD_PART">digilentinc.com:zybo:part0:1.0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.DEVICE">xc7z010</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PACKAGE">clg400</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.PREFHDL">VHDL</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.SILICON_REVISION"/>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.SPEEDGRADE">-1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.STATIC_POWER"/>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.TEMPERATURE_GRADE"/>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_CUSTOMIZATION">TRUE</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.USE_RDI_GENERATION">TRUE</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCACHEID">13cf21e8c23bd3dd</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCACHESYNTHCL">$Change: 3358895 $</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCACHESYNTHCRC">00e93d6b</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCACHESYNTHRUNTIME">37</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPCONTEXT">IP_Unknown</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.IPREVISION">17</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.MANAGED">TRUE</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.OUTPUTDIR">.</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SELECTEDSIMMODEL"/>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SHAREDDIR">.</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SWVERSION">2021.2</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="RUNTIME_PARAM.SYNTHESISFLOW">GLOBAL</spirit:configurableElementValue>
+      </spirit:configurableElementValues>
+    </spirit:componentInstance>
+  </spirit:componentInstances>
+</spirit:design>

@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed May 29 14:02:33 2024
+# Process ID: 27556
+# Current directory: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_AGC_0_0_synth_1
+# Command line: vivado.exe -log system_AGC_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_AGC_0_0.tcl
+# Log file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_AGC_0_0_synth_1/system_AGC_0_0.vds
+# Journal file: P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_AGC_0_0_synth_1\vivado.jou
+# Running On: cadlab-05, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 16, Host memory: 33979 MB
+#-----------------------------------------------------------
+source system_AGC_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.ipdefs/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.cache/ip 
+Command: synth_design -top system_AGC_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30004
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'system_AGC_0_0' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_AGC_0_0/synth/system_AGC_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'AGC' declared at 'P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/AGC.vhd:33' bound to instance 'U0' of component 'AGC' [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_AGC_0_0/synth/system_AGC_0_0.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'AGC' [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/AGC.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_tlast_reg was removed.  [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/AGC.vhd:87]
+WARNING: [Synth 8-6014] Unused sequential element intermediate_tvalid_reg was removed.  [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/AGC.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'AGC' (1#1) [P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.srcs/sources_1/new/AGC.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'system_AGC_0_0' (2#1) [p:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.gen/sources_1/bd/system/ip/system_AGC_0_0/synth/system_AGC_0_0.vhd:71]
+WARNING: [Synth 8-7129] Port M_AXIS_MM2S_tlast in module AGC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[3] in module AGC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[1] in module AGC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[0] in module AGC is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1246.234 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1246.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               96 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	              48x48  Multipliers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/product0, operation Mode is: A*B2.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product0, operation Mode is: PCIN+A2*B.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+DSP Report: Generating DSP U0/product0, operation Mode is: A*B2.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product0, operation Mode is: PCIN+A*B2.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product_reg, operation Mode is: (PCIN+A2*B)'.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+DSP Report: Generating DSP U0/product0, operation Mode is: A*B2.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product0, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product0.
+DSP Report: Generating DSP U0/product_reg, operation Mode is: (PCIN+A*B2)'.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: register U0/product_reg is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+DSP Report: operator U0/product0 is absorbed into DSP U0/product_reg.
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[31] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[30] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[29] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[28] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[27] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[26] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[25] driven by constant 0
+INFO: [Synth 8-3917] design system_AGC_0_0 has port S_AXIS_DATA_tdata[24] driven by constant 0
+WARNING: [Synth 8-7129] Port M_AXIS_MM2S_tlast in module system_AGC_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[3] in module system_AGC_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[1] in module system_AGC_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port AudioConfig[0] in module system_AGC_0_0 is either unconnected or has no load
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[47]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[46]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[45]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[44]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[43]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[42]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[41]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[40]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[39]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[38]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[37]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[36]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[35]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[34]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[33]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[32]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[31]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[30]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[29]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[28]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[27]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[26]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[25]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[24]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[23]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[22]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[21]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[20]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[19]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[18]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[17]) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[47]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[46]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[45]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[44]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[43]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[42]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[41]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[40]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[39]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[38]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[37]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[36]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[35]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[34]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[33]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[32]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[31]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[30]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[29]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[28]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[27]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[26]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[25]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[24]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[23]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[22]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[21]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[20]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[19]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[18]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[17]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[16]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[15]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[14]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[13]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[12]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[11]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[10]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[9]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[8]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[7]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[6]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[5]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[4]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[3]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[2]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[1]__0) is unused and will be removed from module system_AGC_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/product_reg[0]__0) is unused and will be removed from module system_AGC_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|system_AGC_0_0 | A*B2            | 18     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | PCIN+A2*B       | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | (PCIN>>17)+A*B2 | 14     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|system_AGC_0_0 | A*B2            | 18     | 14     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | PCIN+A*B2       | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | (PCIN+A2*B)'    | 18     | 14     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|system_AGC_0_0 | A*B2            | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | (PCIN>>17)+A*B2 | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|system_AGC_0_0 | (PCIN+A*B2)'    | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
++---------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1246.234 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1265.043 ; gain = 18.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++---------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name    | RTL Name                  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++---------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system_AGC_0_0 | U0/M_AXIS_MM2S_tready_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++---------------+---------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    42|
+|2     |DSP48E1 |     9|
+|5     |LUT1    |     3|
+|6     |LUT2    |   146|
+|7     |LUT3    |    54|
+|8     |LUT4    |    28|
+|9     |LUT5    |     3|
+|10    |LUT6    |    17|
+|11    |SRL16E  |     1|
+|12    |FDRE    |    81|
+|13    |FDSE    |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1280.371 ; gain = 34.137
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:20 . Memory (MB): peak = 1280.371 ; gain = 34.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 1280.371 ; gain = 34.137
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1292.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1300.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 605720e6
+INFO: [Common 17-83] Releasing license: Synthesis
+109 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 1300.137 ; gain = 53.902
+INFO: [Common 17-1381] The checkpoint 'P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_AGC_0_0_synth_1/system_AGC_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_AGC_0_0, cache-ID = a8d05f20d67c1a03
+INFO: [Common 17-1381] The checkpoint 'P:/24spring/engs128/workspace/Nestor_Jason/FinalProject-128/Zybo-Z7-10-DMA-hw.xpr/hw/hw.runs/system_AGC_0_0_synth_1/system_AGC_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_AGC_0_0_utilization_synth.rpt -pb system_AGC_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 14:03:06 2024...
